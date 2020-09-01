@@ -24,4 +24,5 @@ A curated collection of awesome **Python** scripts from basic to advance with au
 
 ### 💥 Suggestions 
 
-- Suggest any changes if you think is neccessary to enhance the flow. #9
+- Suggest any changes if you think is neccessary to enhance the flow. 
+- To suggest check issue #9 
