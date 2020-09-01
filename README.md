@@ -13,3 +13,11 @@ A curated collection of awesome **Python** scripts from basic to advance with au
 ##  💥 How to Contribute?
 - All contributions welcomed. Follow these [guidelines](Contribution.md) to contribute.
 - Take a look at [guidelines](Contribution.md).
+
+## 💥 Getting Started 🤘
+
+- Take a look at the Existing Issues or create your own Issues!
+- Wait for the Issue to be assigned to you after which you can start working on it.
+- Fork the Repo and create a Branch for any Issue that you are working upon.
+- Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
+- Can even Add Screenshots to help us know what this Script is all about.
