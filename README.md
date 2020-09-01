@@ -21,3 +21,7 @@ A curated collection of awesome **Python** scripts from basic to advance with au
 - Fork the Repo and create a Branch for any Issue that you are working upon.
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Can even Add Screenshots to help us know what this Script is all about.
+
+###
+
+- Suggest any changes if you think is neccessary.
