@@ -10,7 +10,7 @@
 ## 📌 Introduction
 A curated collection of awesome **Python** scripts from basic to advance with automation task scripts. This is the project from which you can learn that how to contribute a open source contest and specially during in Open source contest as a **Pythoneer**. 
 
-##  💥 How to Contribute?
+## 💥 How to Contribute?
 - All contributions welcomed. Follow these [guidelines](Contribution.md) to contribute.
 - Take a look at [guidelines](Contribution.md).
 
@@ -22,6 +22,6 @@ A curated collection of awesome **Python** scripts from basic to advance with au
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Can even Add Screenshots to help us know what this Script is all about.
 
-###
+### 💥 Suggestions 
 
-- Suggest any changes if you think is neccessary.
+- Suggest any changes if you think is neccessary to enhance the flow. #9
