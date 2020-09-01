@@ -26,3 +26,6 @@ A curated collection of awesome **Python** scripts from basic to advance with au
 
 - Suggest any changes if you think is neccessary to enhance the flow. 
 - To suggest check issue #9 
+
+## License
+This project follows GNU [License](LICENSE)
