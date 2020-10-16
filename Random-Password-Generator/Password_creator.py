@@ -21,9 +21,9 @@ SYMBOLS = ['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>',
            '*', '(', ')'] 
 
 #This function will generate password and print it.
-def password_generator(pwd_len=MIN_LENGTH):    # Setting default length as min length if no arguments are passed.
+def password_generator(pwd_len=MIN_LENGTH):    # Set default length as min length if no arguments are passed.
 
-    all_list = DIGITS + LOWERCASE_CHARACTERS + UPPERCASE_CHARACTERS +SYMBOLS
+    all_list = DIGITS + LOWERCASE_CHARACTERS + UPPERCASE_CHARACTERS + SYMBOLS
 
     # Getting at least one different character
     one_digit = random.choice(DIGITS)

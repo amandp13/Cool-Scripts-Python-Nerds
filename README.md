@@ -16,7 +16,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 ## 📌 Introduction
-A curated collection of awesome **Python** scripts from basic to advance with automation task scripts. This is the project from which you can learn that how to contribute a open source contest and specially during in Open source contest as a **Pythoneer**. 
+A curated collection of awesome **Python** scripts from basic to advance with automation task scripts. This is the project from which you can learn that how to contribute a open source contest and specially during in Open source contest as a **Pythonerd**. 
 * ✔️ **YOU JUST NEED TO ADD SOME COOL PYTHON SCRIPTS**  
 
 ## 💥 How to Contribute?
@@ -34,7 +34,7 @@ A curated collection of awesome **Python** scripts from basic to advance with au
 ### 💥 Suggestions 
 
 - Suggest any changes if you think is neccessary to enhance the flow. 
-- To suggest check issue #9 
+- To suggest check issue **#9** 
 
 ## 💥 License
 This project follows GNU [License](LICENSE)
