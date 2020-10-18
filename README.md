@@ -31,12 +31,20 @@ A curated collection of awesome **Python** scripts from basic to advance with au
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Can even Add Screenshots to help us know what this Script is all about.
 
-### 💥 Suggestions 
+### 💥 Suggestions 💡
 
 - Suggest any changes if you think is neccessary to enhance the flow. 
 - To suggest check issue **#9** 
 
-## 💥 License
+## 💥 License ✔️
 This project follows GNU [License](LICENSE)
 
 <hr>
+
+
+## Project Administrator 🧑‍💻 :
+
+|<a href="https://github.com/amandp13"><img src="https://s3-ap-southeast-1.amazonaws.com/mirakee.com/users/avatars/000/455/424/large/521efe318161ad2acde67c894405bc8c.jpeg?1552836139" width=150px height=150px /></a>|
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                                      **[Amandeep](https://www.linkedin.com/in/aman-deep-5b614a190/)**                                                                                       |
+| <a href="https://www.linkedin.com/in/aman-deep-5b614a190/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a> |
