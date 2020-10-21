@@ -19,7 +19,7 @@ server.starttls()
 server.login("YOUR_EMAIL","YOUR_PASSWORD")
 
 #creating body of the email
-msg = "Hello this is testing mail for email sending automation"
+msg = "Hey everyone this is testing mail for email sending automation"
 subject = "Testing Email Automation"
 body = "Subject: {}\n\n{}".format(subject,msg)
 
