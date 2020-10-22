@@ -1,0 +1,63 @@
+What is Web Scraping?
+As the name suggests, this is a technique used for extracting data from websites. It is an automated process where an application processes the HTML of a Web Page to extract data for manipulation such as converting the Web page to another format and copying it into a local database or spreadsheet for later retrieval or analysis.
+
+What is Selenium?
+Selenium is a Web Browser Automation Tool.
+
+Primarily, it is for automating web applications for testing purposes, but is certainly not limited to just that. It allows you to open a browser of your choice & perform tasks as a human being would, such as:
+
+Clicking buttons
+Entering information in forms
+Searching for specific information on the web pages
+What will we build?
+We build a web scraping program that will scrape a Linkedin user profile and get the details of the recruiter. This tool can be used to generate data for Analysis.
+
+If you would like to jump straight into the project, here is link to the repo on Github. https://github.com/boun7yhunt3r/Linkedin-profile-data-Collection
+
+What will we require?
+For this project we will use Python3.x. You can also use Python2.x but there may be some slight differences in the code.
+
+NB: If you have Python 2 >=2.7.9 or Python 3 >=3.4 installed from python.org, you will already have pip installed.
+
+We will also use the following packages and driver.
+
+selenium package — used to automate web browser interaction from Python
+ChromeDriver — provides a platform to launch and perform tasks in specified browser.
+Virtualenv — to create an isolated Python environment for our project.
+Extras: Selenium-Python ReadTheDocs Resource.
+How do we automate the process?
+Start by building up the search string.
+
+a.      “We are hiring Delhi” – 57k people results
+
+b.     “We’re hiring Delhi” – 65k people results
+
+c.      “Hiring Delhi” – 280k results
+
+d.     “I am hiring Delhi” – 57k people results
+
+e.      “I’m Hiring Delhi” – 17k people results
+
+f.       “We are hiring Delhi” – 12k results
+
+g.      “We’re hiring Delhi” – 16k results
+
+h.     “Hiring Delhi” – 78k results
+
+i.      “I am hiring Delhi” – 15k people results
+
+No alt text provided for this image
+Click on the people tab :
+
+No alt text provided for this image
+1.      Go through each search result and click on their profile :
+
+a.      Copy the name of the person, their title and their most recent / current company name, and feed into excel sheet (Company Name should be the first company listed in their “Experience”)
+
+b.      Make sure this person has “We are hiring Delhi” written in their profile
+
+c.      Make sure this person is in Delhi – You can see their city in their profile
+
+Downloading Details to an Excel.
+Using Selenium and Pandas we can download and save details to an excel sheet
+
