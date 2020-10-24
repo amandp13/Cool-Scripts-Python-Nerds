@@ -32,4 +32,5 @@ def main():
 
 
 if __name__ == "__main__":
+    print("This the main source code of the module.")
     main()
