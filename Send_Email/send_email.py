@@ -1,7 +1,7 @@
 import smtplib
 
 
-def send_registration_email():
+def send_email():
     server = smtplib.SMTP('smtp.gmail.com',587)
 
     server.starttls()
