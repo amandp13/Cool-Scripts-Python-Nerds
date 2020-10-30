@@ -19,7 +19,7 @@
 ## 📌 Introduction
 A curated collection of awesome **Python** scripts from basic to advance with automation task scripts. This is the project from which you can learn that how to contribute a open source contest and specially during in Open source contest as a **Pythonerd**. 
 * ✔️ **YOU JUST NEED TO ADD SOME COOL PYTHON SCRIPTS** 
-* ✔️ **ONE PULL REQUEST AT A TIME** 
+* ✔️ **ONE PULL REQUEST[PR] AT A TIME** 
 
 ## 💥 How to Contribute?
 - All contributions welcomed. Follow these [guidelines](Contribution.md) to contribute.
