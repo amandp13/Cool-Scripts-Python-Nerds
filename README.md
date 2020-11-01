@@ -2,9 +2,7 @@
 
 
 ### ✨ Accepted For Hacktoberfest 2020 ✨
-<p align="center">
-<a  href="" target="_blank"><img src="https://embed-fastly.wistia.com/deliveries/49bd387c40e2c5aada92abdf973bc46d.webp?image_crop_resized=960x540" alt="HTML" style="height: auto !important;width: auto !important;" ></a>
-</p>
+
 <hr>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -19,7 +17,7 @@
 ## 📌 Introduction
 A curated collection of awesome **Python** scripts from basic to advance with automation task scripts. This is the project from which you can learn that how to contribute a open source contest and specially during in Open source contest as a **Pythonerd**. 
 * ✔️ **YOU JUST NEED TO ADD SOME COOL PYTHON SCRIPTS** 
-* ✔️ **ONE PULL REQUEST[PR] AT A TIME** 
+* ✔️ **ONE PULL REQUEST AT A TIME** 
 
 ## 💥 How to Contribute?
 - All contributions welcomed. Follow these [guidelines](Contribution.md) to contribute.
