@@ -7,7 +7,6 @@ basic operations associated with it.
 Author: Adarsh
 
 """
-
 import math
 
 
