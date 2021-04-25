@@ -14,14 +14,14 @@ import math
 class Vector:
     """
     This program creates a vector and also
-    enables the operations of vector algebra on 
+    enables the operations of vector algebra on
     it.
 
     """
 
     def __init__(self, comp):
         """
-        Initializes the vector in two possible 
+        Initializes the vector in two possible
         ways. If given a list, it creates a vector
         with the components of the list. If given an
         integer n, it creates the n-dimensional zero
@@ -89,7 +89,7 @@ class Vector:
         False
         """
         equal = False
-        if (self.dim == other.dim):
+        if self.dim == other.dim:
             equal = True
 
         if equal:
@@ -105,8 +105,8 @@ class Vector:
 
     def __add__(self, other):
         """
-        This adds two vectors according to the 
-        laws of vector addition if the addition 
+        This adds two vectors according to the
+        laws of vector addition if the addition
         is compatible
 
         >>> v1 = Vector([1, 2, 3])
@@ -147,7 +147,7 @@ class Vector:
         """
         Subtracts two vectors according
         to the laws of vector subtraction. Note that
-        the second vector is subtracted from the 
+        the second vector is subtracted from the
         first and not the other way. Works only if
         the vectors have compatible dimensions.
 
@@ -184,7 +184,7 @@ class Vector:
     def dot(self, other):
         """
         Returns the standard inner product of the
-        two vectors in terms of their components, 
+        two vectors in terms of their components,
         provided that they have identical dimensions.
         Else raises an exception.
 
@@ -199,7 +199,7 @@ class Vector:
         ...
         ValueError: The operation is not supported. 3 with 2
         """
-        if (self.dim != other.dim):
+        if self.dim != other.dim:
             Vector.__comp_mismatch(self, other)
             return
 
@@ -210,7 +210,7 @@ class Vector:
 
     def __str__(self):
         """
-        This returns the representation of the vector 
+        This returns the representation of the vector
         in a form that can be understood by the user.
 
         >>> v = Vector([1, 2, 3])
@@ -241,8 +241,7 @@ class Vector:
         length = len(str(largest))
 
         result = ""
-        result += "\nDimension of vector: {0}\n" \
-            .format(self.dim)
+        result += "\nDimension of vector: {0}\n".format(self.dim)
         result += "The vector:\n"
 
         for c in self.components:
@@ -267,11 +266,12 @@ class Vector:
          3
         <BLANKLINE>
         """
-        return ("Vector(" + str(self.components) + ")")
+        return "Vector(" + str(self.components) + ")"
 
     def __comp_mismatch(self, other):
-        raise ValueError("The operation is not supported. {0} with {1}"
-                         .format(self.dim, other.dim))
+        raise ValueError(
+            "The operation is not supported. {0} with {1}".format(self.dim, other.dim)
+        )
 
     @property
     def length(self):
@@ -292,7 +292,7 @@ class Vector:
     @staticmethod
     def angle(self, other):
         """
-        Returns the angle between two vectors of the 
+        Returns the angle between two vectors of the
         same dimension in radians.
 
         >>> v1 = Vector([3, 5])
@@ -308,4 +308,5 @@ class Vector:
 
 if __name__ == "__main__":
     import doctest
+
     doctest.testmod()
