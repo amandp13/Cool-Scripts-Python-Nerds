@@ -10,299 +10,302 @@ Author: Adarsh
 
 import math
 
+
 class Vector:
-	"""
-	This program creates a vector and also
-	enables the operations of vector algebra on 
-	it.
+    """
+    This program creates a vector and also
+    enables the operations of vector algebra on 
+    it.
 
-	"""
-	def __init__(self, comp):
-		"""
-		Initializes the vector in two possible 
-		ways. If given a list, it creates a vector
-		with the components of the list. If given an
-		integer n, it creates the n-dimensional zero
-		vector.
+    """
 
-		>>> v = Vector([1, 2, 3])
-		>>> v.components
-		[1, 2, 3]
-		>>> v.dim
-		3
+    def __init__(self, comp):
+        """
+        Initializes the vector in two possible 
+        ways. If given a list, it creates a vector
+        with the components of the list. If given an
+        integer n, it creates the n-dimensional zero
+        vector.
 
-		>>> r = Vector(2)
-		>>> r.components
-		[0, 0]
+        >>> v = Vector([1, 2, 3])
+        >>> v.components
+        [1, 2, 3]
+        >>> v.dim
+        3
 
-		>>> r.dim
-		2
-		"""
-		if isinstance(comp, list):
-			self.components = comp
-			self.dim = len(comp)
-		elif isinstance(comp, int):
-			self.dim = comp
-			self.components = [0 for i in range(comp)]
+        >>> r = Vector(2)
+        >>> r.components
+        [0, 0]
 
-	def __neg__(self):
-		"""
-		This negates a vector by negating each
-		of its components.
+        >>> r.dim
+        2
+        """
+        if isinstance(comp, list):
+            self.components = comp
+            self.dim = len(comp)
+        elif isinstance(comp, int):
+            self.dim = comp
+            self.components = [0 for i in range(comp)]
 
-		>>> v = Vector([1, -2, 34])
-		>>> v = -v
-		>>> print(v)
-		<BLANKLINE>
-		Dimension of vector: 3
-		The vector:
-		 -1
-		  2
-		-34
-		<BLANKLINE>
+    def __neg__(self):
+        """
+        This negates a vector by negating each
+        of its components.
 
-		"""
-		result = []
-		for c in self.components:
-			result.append(-c)
-		vr = Vector(result)
-		return vr
+        >>> v = Vector([1, -2, 34])
+        >>> v = -v
+        >>> print(v)
+        <BLANKLINE>
+        Dimension of vector: 3
+        The vector:
+         -1
+          2
+        -34
+        <BLANKLINE>
 
-	def __eq__(self, other):
-		"""
-		Checks if two vectors are equal by comparing
-		components.
+        """
+        result = []
+        for c in self.components:
+            result.append(-c)
+        vr = Vector(result)
+        return vr
 
-		>>> v1 = Vector([1, 2, 3])
-		>>> v2 = eval(repr(v1))
-		>>> v1 == v2
-		True
+    def __eq__(self, other):
+        """
+        Checks if two vectors are equal by comparing
+        components.
 
-		>>> v3 = Vector([1, 2])
-		>>> v3 == v1
-		False
+        >>> v1 = Vector([1, 2, 3])
+        >>> v2 = eval(repr(v1))
+        >>> v1 == v2
+        True
 
-		>>> v3 = Vector([1, 2, -3])
-		>>> v3 == v1
-		False
-		"""
-		equal = False
-		if (self.dim == other.dim):
-			equal = True
+        >>> v3 = Vector([1, 2])
+        >>> v3 == v1
+        False
 
-		if equal:
-			for i in range(self.dim):
-				if self.components[i] != other.components[i]:
-					equal = False
-					break
+        >>> v3 = Vector([1, 2, -3])
+        >>> v3 == v1
+        False
+        """
+        equal = False
+        if (self.dim == other.dim):
+            equal = True
 
-		if equal:
-			return True
-		else:
-			return False
+        if equal:
+            for i in range(self.dim):
+                if self.components[i] != other.components[i]:
+                    equal = False
+                    break
 
-	def __add__(self, other):
-		"""
-		This adds two vectors according to the 
-		laws of vector addition if the addition 
-		is compatible
+        if equal:
+            return True
+        else:
+            return False
 
-		>>> v1 = Vector([1, 2, 3])
-		>>> v2 = Vector([-1, 5, 6])
-		>>> v = v1 + v2
-		>>> print(v)
-		<BLANKLINE>
-		Dimension of vector: 3
-		The vector:
-		 0
-		 7
-		 9
-		<BLANKLINE>
+    def __add__(self, other):
+        """
+        This adds two vectors according to the 
+        laws of vector addition if the addition 
+        is compatible
 
-		"""
-		if self.dim != other.dim:
-			Vector.__comp_mismatch(self, other)
-			return
+        >>> v1 = Vector([1, 2, 3])
+        >>> v2 = Vector([-1, 5, 6])
+        >>> v = v1 + v2
+        >>> print(v)
+        <BLANKLINE>
+        Dimension of vector: 3
+        The vector:
+         0
+         7
+         9
+        <BLANKLINE>
 
-		result = []
-		for i in range(self.dim):
-			result.append(self.components[i] + other.components[i])
-		vr = Vector(result);
-		return vr;
+        """
+        if self.dim != other.dim:
+            Vector.__comp_mismatch(self, other)
+            return
 
-	def __iadd__(self, other):
-		"""
-		Shorthand addition.
+        result = []
+        for i in range(self.dim):
+            result.append(self.components[i] + other.components[i])
+        vr = Vector(result)
+        return vr
 
-		>>> v1 = Vector([1, 2, 3])
-		>>> v1 += v1
-		>>> v1
-		Vector([2, 4, 6])
-		"""
-		return self + other
+    def __iadd__(self, other):
+        """
+        Shorthand addition.
 
-	def __sub__(self, other):
-		"""
-		Subtracts two vectors according
-		to the laws of vector subtraction. Note that
-		the second vector is subtracted from the 
-		first and not the other way. Works only if
-		the vectors have compatible dimensions.
+        >>> v1 = Vector([1, 2, 3])
+        >>> v1 += v1
+        >>> v1
+        Vector([2, 4, 6])
+        """
+        return self + other
 
-		>>> v1 = Vector([1, 2])
-		>>> v2 = Vector([-10, 0])
+    def __sub__(self, other):
+        """
+        Subtracts two vectors according
+        to the laws of vector subtraction. Note that
+        the second vector is subtracted from the 
+        first and not the other way. Works only if
+        the vectors have compatible dimensions.
 
-		>>> print(v1 - v2)
-		<BLANKLINE>
-		Dimension of vector: 2
-		The vector:
-		 11
-		 2
-		<BLANKLINE>
+        >>> v1 = Vector([1, 2])
+        >>> v2 = Vector([-10, 0])
 
-		>>> v3 = Vector([1, 2, 3])
-		>>> print(v1 - v3)
-		Traceback (most recent call last):
-		...
-		ValueError: The operation is not supported. 2 with 3
-		"""
-		return self + (-other)
+        >>> print(v1 - v2)
+        <BLANKLINE>
+        Dimension of vector: 2
+        The vector:
+         11
+         2
+        <BLANKLINE>
 
-	def __isub__(self, other):
-		"""
-		Shorthand subtraction.
+        >>> v3 = Vector([1, 2, 3])
+        >>> print(v1 - v3)
+        Traceback (most recent call last):
+        ...
+        ValueError: The operation is not supported. 2 with 3
+        """
+        return self + (-other)
 
-		>>> v = Vector([1, 2, 3])
-		>>> v -= v
-		>>> v
-		Vector([0, 0, 0])
-		"""
-		return self - other
-	
-	def dot(self, other):
-		"""
-		Returns the standard inner product of the
-		two vectors in terms of their components, 
-		provided that they have identical dimensions.
-		Else raises an exception.
+    def __isub__(self, other):
+        """
+        Shorthand subtraction.
 
-		>>> v1 = Vector([10, 9, 3])
-		>>> v2 = Vector([-1, 4, 2])
-		>>> v1.dot(v2)
-		32
+        >>> v = Vector([1, 2, 3])
+        >>> v -= v
+        >>> v
+        Vector([0, 0, 0])
+        """
+        return self - other
 
-		>>> v3 = Vector(2)
-		>>> v1.dot(v3)
-		Traceback (most recent call last):
-		...
-		ValueError: The operation is not supported. 3 with 2
-		"""
-		if (self.dim != other.dim):
-			Vector.__comp_mismatch(self, other)
-			return
+    def dot(self, other):
+        """
+        Returns the standard inner product of the
+        two vectors in terms of their components, 
+        provided that they have identical dimensions.
+        Else raises an exception.
 
-		result = 0
-		for i in range(self.dim):
-			result += self.components[i] * other.components[i]
-		return result 
+        >>> v1 = Vector([10, 9, 3])
+        >>> v2 = Vector([-1, 4, 2])
+        >>> v1.dot(v2)
+        32
 
-	def __str__(self):
-		"""
-		This returns the representation of the vector 
-		in a form that can be understood by the user.
+        >>> v3 = Vector(2)
+        >>> v1.dot(v3)
+        Traceback (most recent call last):
+        ...
+        ValueError: The operation is not supported. 3 with 2
+        """
+        if (self.dim != other.dim):
+            Vector.__comp_mismatch(self, other)
+            return
 
-		>>> v = Vector([1, 2, 3])
+        result = 0
+        for i in range(self.dim):
+            result += self.components[i] * other.components[i]
+        return result
 
-		>>> print(v)
-		<BLANKLINE>
-		Dimension of vector: 3
-		The vector:
-		 1
-		 2
-		 3
-		<BLANKLINE>
+    def __str__(self):
+        """
+        This returns the representation of the vector 
+        in a form that can be understood by the user.
 
-		>>> v3 = Vector(2)
-		>>> print(v3)
-		<BLANKLINE>
-		Dimension of vector: 2
-		The vector:
-		 0
-		 0
-		<BLANKLINE>
+        >>> v = Vector([1, 2, 3])
 
-		"""
-		largest = 0
-		for c in self.components:
-			if abs(c) > largest:
-				largest = c
-		length = len(str(largest))
+        >>> print(v)
+        <BLANKLINE>
+        Dimension of vector: 3
+        The vector:
+         1
+         2
+         3
+        <BLANKLINE>
 
-		result = ""
-		result += "\nDimension of vector: {0}\n" \
-			      .format(self.dim)
-		result += "The vector:\n"
+        >>> v3 = Vector(2)
+        >>> print(v3)
+        <BLANKLINE>
+        Dimension of vector: 2
+        The vector:
+         0
+         0
+        <BLANKLINE>
 
-		for c in self.components:
-			result += ("{0:> " + str(length) + "}\n").format(c)
-		return result
+        """
+        largest = 0
+        for c in self.components:
+            if abs(c) > largest:
+                largest = c
+        length = len(str(largest))
 
-	def __repr__(self):
-		"""
-		Returns an eval-avble expression of given Vector.
+        result = ""
+        result += "\nDimension of vector: {0}\n" \
+            .format(self.dim)
+        result += "The vector:\n"
 
-		>>> v = Vector([1, 2, 3])
-		>>> print(repr(v))
-		Vector([1, 2, 3])
+        for c in self.components:
+            result += ("{0:> " + str(length) + "}\n").format(c)
+        return result
 
-		>>> v1 = eval(repr(v))
-		>>> print(v1)
-		<BLANKLINE>
-		Dimension of vector: 3
-		The vector:
-		 1
-		 2
-		 3
-		<BLANKLINE>
-		"""
-		return ("Vector(" + str(self.components) + ")")
+    def __repr__(self):
+        """
+        Returns an eval-avble expression of given Vector.
 
-	def __comp_mismatch(self, other):
-		raise ValueError("The operation is not supported. {0} with {1}"
-					.format(self.dim, other.dim))
+        >>> v = Vector([1, 2, 3])
+        >>> print(repr(v))
+        Vector([1, 2, 3])
 
-	@property
-	def length(self):
-		"""
-		Returns the length of the vector with
-		respect to the standard inner product.
+        >>> v1 = eval(repr(v))
+        >>> print(v1)
+        <BLANKLINE>
+        Dimension of vector: 3
+        The vector:
+         1
+         2
+         3
+        <BLANKLINE>
+        """
+        return ("Vector(" + str(self.components) + ")")
 
-		>>> v = Vector([3, 4])
-		>>> v.length
-		5.0
+    def __comp_mismatch(self, other):
+        raise ValueError("The operation is not supported. {0} with {1}"
+                         .format(self.dim, other.dim))
 
-		>>> v = Vector([3, 4, math.sqrt(11)])
-		>>> v.length
-		6.0
-		"""
-		return math.sqrt(self.dot(self))
-	
-	@staticmethod
-	def angle(self, other):
-		"""
-		Returns the angle between two vectors of the 
-		same dimension in radians.
-			
-		>>> v1 = Vector([3, 5])
-		>>> v2 = Vector([-5, 3])
-		>>> Vector.angle(v1, v2)
-		1.5707963267948966
+    @property
+    def length(self):
+        """
+        Returns the length of the vector with
+        respect to the standard inner product.
 
-		>>> Vector.angle(v1, v1)
-		0.0
-		"""
-		return math.acos(self.dot(other) / (self.length * other.length))
+        >>> v = Vector([3, 4])
+        >>> v.length
+        5.0
+
+        >>> v = Vector([3, 4, math.sqrt(11)])
+        >>> v.length
+        6.0
+        """
+        return math.sqrt(self.dot(self))
+
+    @staticmethod
+    def angle(self, other):
+        """
+        Returns the angle between two vectors of the 
+        same dimension in radians.
+
+        >>> v1 = Vector([3, 5])
+        >>> v2 = Vector([-5, 3])
+        >>> Vector.angle(v1, v2)
+        1.5707963267948966
+
+        >>> Vector.angle(v1, v1)
+        0.0
+        """
+        return math.acos(self.dot(other) / (self.length * other.length))
+
 
 if __name__ == "__main__":
-	import doctest
-	doctest.testmod()
+    import doctest
+    doctest.testmod()
