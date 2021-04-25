@@ -17,7 +17,6 @@ class Vector:
     it.
 
     """
-
     def __init__(self, comp):
         """
         Initializes the vector in two possible
@@ -268,9 +267,8 @@ class Vector:
         return "Vector(" + str(self.components) + ")"
 
     def __comp_mismatch(self, other):
-        raise ValueError(
-            "The operation is not supported. {0} with {1}".format(self.dim, other.dim)
-        )
+        raise ValueError("The operation is not supported. {0} with {1}".format(
+            self.dim, other.dim))
 
     @property
     def length(self):
