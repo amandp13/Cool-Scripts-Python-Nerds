@@ -4,7 +4,7 @@
 
 ## Script Instructions: 👨🏻‍💻
  ### Step 1: 
-    Open Termnial 💻
+    Open Terminal 💻
  ### Step 2: 
     Locate to the directory where python file is located 📂
  ### Step 3: 
