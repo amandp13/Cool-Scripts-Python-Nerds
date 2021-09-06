@@ -1,7 +1,7 @@
 # Cool-Scripts-Python-Nerds
 
 
-### ✨ Accepted For Hacktoberfest 2020 ✨
+#### ✨ Accepted in Hacktoberfest 2020 ✨
 
 <hr>
 
@@ -18,6 +18,7 @@
 A curated collection of awesome **Python** scripts from basic to advance with automation task scripts. This is the project from which you can learn that how to contribute a open source contest and specially during in Open source contest as a **Pythonerd**. 
 * ✔️ **YOU JUST NEED TO ADD SOME COOL PYTHON SCRIPTS** 
 * ✔️ **ONE PULL REQUEST AT A TIME** 
+* ✔️ **ADD UNIQUE PYTHON SCRIPTS/APPLICATION ONLY** 
 
 ## 💥 How to Contribute?
 - All contributions welcomed. Follow these [guidelines](Contribution.md) to contribute.
