@@ -32,7 +32,7 @@ while True:
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     for (x, y, w, h) in faces:
         cv2.rectangle(im, (x, y), (x + w, y + h), (255, 0, 0), 2)
-        face = gray[y : y + h, x : x + w]
+        face = gray[y:y + h, x:x + w]
         face_resize = cv2.resize(face, (width, height))
         prediction = model.predict(face_resize)
         cv2.rectangle(im, (x, y), (x + w, y + h), (0, 255, 0), 3)
