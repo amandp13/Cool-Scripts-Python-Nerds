@@ -1,7 +1,8 @@
-import cv2
-import sys
-import numpy
 import os
+import sys
+
+import cv2
+import numpy
 
 s = input("Enter Roll No\n")
 haar_file = "haarcascade_frontalface_default.xml"

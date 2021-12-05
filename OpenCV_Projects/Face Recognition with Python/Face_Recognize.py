@@ -1,7 +1,8 @@
-import cv2
-import sys
-import numpy
 import os
+import sys
+
+import cv2
+import numpy
 from cv2 import face
 
 size = 4
