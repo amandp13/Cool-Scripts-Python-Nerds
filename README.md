@@ -1,7 +1,7 @@
 # Cool-Scripts-Python-Nerds
 
 
-#### ✨ Accepted in Hacktoberfest 2020 ✨
+#### ✨ Accepted in Hacktoberfest 2020-2021 ✨
 
 <hr>
 
