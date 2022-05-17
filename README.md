@@ -1,7 +1,8 @@
 # Cool-Scripts-Python-Nerds
 
+### ✨ Accepted in **GitHub Education, Community Exchange(CX) project 2022**✨
+### ✨ Accepted in Hacktoberfest 2020 ✨
 
-#### ✨ Accepted in Hacktoberfest 2020-2021 ✨
 
 <hr>
 
@@ -20,7 +21,7 @@ A curated collection of awesome **Python** scripts from basic to advance with au
 * ✔️ **ONE PULL REQUEST AT A TIME** 
 * ✔️ **ADD UNIQUE PYTHON SCRIPTS/APPLICATION ONLY** 
 
-## 💥 How to Contribute?
+## 💥 How to Contribute? 🤩
 - All contributions welcomed. Follow these [guidelines](Contribution.md) to contribute.
 - Take a look at [guidelines](Contribution.md).
 
@@ -31,6 +32,11 @@ A curated collection of awesome **Python** scripts from basic to advance with au
 - Fork the Repo and create a Branch for any Issue that you are working upon.
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Can even Add Screenshots to help us know what this Script is all about.
+
+## 💥 Code Of Conduct 📌
+- All of you are requested to follow the Code of Conduct. 
+- Take a look at [Code of Conduct](https://github.com/amandp13/Cool-Scripts-Python-Nerds/blob/master/CODE_OF_CONDUCT.md).
+- You are good to go now.
 
 ### 💥 Suggestions 💡
 
