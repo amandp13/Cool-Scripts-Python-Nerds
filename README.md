@@ -13,7 +13,7 @@
 
   ![download](https://user-images.githubusercontent.com/55224891/168888199-65446993-30f7-4995-b45d-d7bb0c1caba9.png)
 
-### Also, ✨ Accepted in Hacktoberfest 2020 ✨
+#### Previously - ✨ Accepted in Hacktoberfest 2020 ✨
 
 
 <hr>
