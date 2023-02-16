@@ -17,8 +17,8 @@ for song in data:
     list.append(song.text.strip('\n\t'))
 print(list)
 
-SPOTIPY_CLIENT_ID= "08fe757b2fa3430284e4846308b58bac"
-SPOTIPY_CLIENT_SECRET = "232b810d7f5a4e178293aa7806449806"
+SPOTIPY_CLIENT_ID= "YOUR CLIENT ID"
+SPOTIPY_CLIENT_SECRET = "YOUR CLIENT SECRET"
 SURL = "https://api.spotify.com/v1/users/user_id/playlists"
 SPOTIPY_REDIRECT_URI="http://localhost:8888/callback/"
 OAUTH_TOKEN_URL= 'https://accounts.spotify.com/api/token'
