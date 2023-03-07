@@ -5,11 +5,12 @@
 # If opening the add in stack
 # Else check if it's complimentary parentheses is present on top of stack.
 
+
 def isValid(self, s: str) -> bool:
     stack = []
-    dic = {'(': ')', '{': '}', '[': ']'}
+    dic = {"(": ")", "{": "}", "[": "]"}
     for i in range(len(s)):
-        if s[i] == '(' or s[i] == '{' or s[i] == '[':
+        if s[i] == "(" or s[i] == "{" or s[i] == "[":
             stack.append(s[i])
         else:
             if len(stack) != 0:
