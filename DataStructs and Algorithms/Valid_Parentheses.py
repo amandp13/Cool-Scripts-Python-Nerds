@@ -1,6 +1,5 @@
 # Problem statement: Given a string s containing just the characters '(', ')', '{', '}', '[' and ']'
 # determine if the input string is valid.
-
 # Solution: O(n), iterate over the string and at each index check if it's opening parentheses or closing parenteses
 # If opening the add in stack
 # Else check if it's complimentary parentheses is present on top of stack.
